@@ -6,7 +6,7 @@ const Profile = () => {
             <div className='p-pic'>
                 <div className="frame-out">
                     <div className="frame">
-                        <img src="src\assets\profile.jpg" alt="" />
+                        <img src="src/assets/profile.jpg" alt="" />
                     </div>
                 </div>
             </div>
