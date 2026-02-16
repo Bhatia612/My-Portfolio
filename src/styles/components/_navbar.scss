@@ -1,0 +1,36 @@
+@use "../utils";
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    @extend %border-top-bottom;
+    width: 100vw;
+    padding: .5rem 0;
+    position: fixed;
+    left: 0;
+    background: #0c0c0c;
+    z-index: 9;
+
+    &__list {
+        width: 65%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+        padding-right: 4rem;
+        list-style: none;
+        padding-top: .5rem;
+
+
+        li {
+            @extend %font-pri;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: .8rem;
+            letter-spacing: 1px;
+
+            &:not(:hover) {
+                opacity: 0.7;
+            }
+        }
+    }
+}

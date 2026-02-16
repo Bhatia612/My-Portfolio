@@ -1,0 +1,26 @@
+// Borders...
+$border-color: #2d2d2ded;
+$separator-color: #48484880;
+
+%border-top-bottom {
+  border-top: 1.5px solid $border-color;
+  border-bottom: 1.5px solid $border-color;
+}
+
+%border-left-right {
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+}
+
+// Fonts...
+
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Story+Script&display=swap');
+
+
+%font-pri {
+  font-family: "Delius Unicase", cursive;
+}
+
+%font-sec {
+  font-family: "Story Script", sans-serif;
+}

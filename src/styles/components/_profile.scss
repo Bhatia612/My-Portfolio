@@ -1,0 +1,82 @@
+@use "../utils";
+
+.profile {
+    width: 65vw;
+    display: flex;
+    justify-content: space-between;
+
+    .p-pic {
+        width: 12rem;
+        aspect-ratio: 1;
+        @extend %border-left-right;
+        display: grid;
+        place-items: center;
+
+        .frame-out {
+            display: grid;
+            place-items: center;
+            aspect-ratio: 1;
+            padding: .1rem;
+            @extend %border-top-bottom;
+            @extend %border-left-right;
+            border-radius: 50%;
+            background: #0c0c0c;
+            scale: 1.09;
+            position: relative;
+            z-index: 9;
+
+        }
+
+        .frame {
+
+            background: green;
+            border-radius: 50%;
+            overflow: hidden;
+
+        }
+
+        img {
+            scale: 1.5;
+            width: 96%;
+            padding: .1rem;
+            border-radius: 50%;
+            position: relative;
+
+
+        }
+    }
+
+    .p-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        width: 80%;
+
+        p {
+            padding: .3rem 1rem;
+            @extend %font-sec;
+            letter-spacing: 4px;
+            opacity: .5;
+            font-size: .7rem
+
+
+        }
+
+        .name {
+            @extend %border-top-bottom;
+            font-size: 2.5rem;
+            @extend %font-pri;
+            font-weight: 900;
+            letter-spacing: 4px;
+            padding: 0 1rem;
+        }
+
+        .title {
+            font-size: 1.0rem;
+            @extend %font-sec;
+            letter-spacing: 2px;
+            padding: .5rem 1rem;
+        }
+    }
+}
