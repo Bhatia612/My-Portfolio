@@ -1,4 +1,5 @@
 import React from 'react'
+import profile from "../assets/profile.jpg"
 
 const Profile = () => {
     return (
@@ -6,7 +7,7 @@ const Profile = () => {
             <div className='p-pic'>
                 <div className="frame-out">
                     <div className="frame">
-                        <img src="src/assets/profile.jpg" alt="" />
+                        <img src={profile} alt="" />
                     </div>
                 </div>
             </div>
