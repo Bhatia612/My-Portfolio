@@ -1,7 +1,8 @@
-// Borders...
 $border-color: #2d2d2ded;
 $separator-color: #48484880;
+$bg-color: #08090e;
 
+// Borders...
 %border-top-bottom {
   border-top: 1.5px solid $border-color;
   border-bottom: 1.5px solid $border-color;

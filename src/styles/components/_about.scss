@@ -1,0 +1,41 @@
+@use "../utils";
+
+.about {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        width: 65vw;
+        font-size: 1.8rem;
+        @extend %font-pri;
+        @extend %border-left-right;
+        padding: 1rem 0.5rem .2rem;
+        letter-spacing: 2px;
+
+    }
+
+    &__list {
+        padding-top: 1rem;
+        list-style: none;
+        width: 100vw;
+        @extend %border-top-bottom;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            position: relative;
+            padding: .5rem 1rem;
+            padding-bottom: .5rem;
+            width: 65vw;
+            @extend %font-sec;
+            letter-spacing: 1.5px;
+
+
+
+
+        }
+    }
+}

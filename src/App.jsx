@@ -9,6 +9,7 @@ import Portfolio from './pages/Portfolio';
 const App = () => {
   return <>
     <main>
+      <div className="top"><div className="inner"></div></div>
       <Navbar />
       <div className="cover-bg empty"></div>
       <Routes>

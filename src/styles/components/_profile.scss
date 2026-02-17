@@ -1,4 +1,4 @@
-@use "../utils";
+@use "../utils" as *;
 
 .profile {
     width: 65vw;
@@ -20,15 +20,14 @@
             @extend %border-top-bottom;
             @extend %border-left-right;
             border-radius: 50%;
-            background: #0c0c0c;
+            background: $bg-color;
             scale: 1.09;
             position: relative;
-            z-index: 9;
+            z-index: 7;
 
         }
 
         .frame {
-
             background: green;
             border-radius: 50%;
             overflow: hidden;
@@ -80,3 +79,4 @@
         }
     }
 }
+

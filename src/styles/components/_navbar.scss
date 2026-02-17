@@ -1,24 +1,25 @@
-@use "../utils";
+@use "../utils" as *;
 
 .navbar {
     display: flex;
     justify-content: center;
     @extend %border-top-bottom;
     width: 100vw;
-    padding: .5rem 0;
     position: fixed;
     left: 0;
-    background: #0c0c0c;
+    background: $bg-color;
     z-index: 9;
 
     &__list {
         width: 65%;
+        height: 100%;
         display: flex;
         justify-content: flex-end;
         gap: 2rem;
-        padding-right: 4rem;
         list-style: none;
-        padding-top: .5rem;
+        padding: 1rem 0 .5rem;
+        padding-right: 4rem;
+        @extend %border-left-right;
 
 
         li {
@@ -34,3 +35,6 @@
         }
     }
 }
+
+
+
