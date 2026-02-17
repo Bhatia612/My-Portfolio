@@ -1,4 +1,4 @@
-@use "../utils";
+@use "../utils" as *;
 
 .personal-info {
     display: grid;
@@ -6,15 +6,46 @@
     height: 15rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    letter-spacing: 3px;
+
+
+    }
+
 
 
     .left {
         @extend %border-left-right;
         grid-row: 1 / 3;
+        padding: .5rem;
+        display: grid;
+        padding-left: center;
+
+        ul {
+            display: grid;
+            place-content: start;
+
+            li {
+                list-style: none;
+                @extend %font-sec;
+                padding: .5rem;
+
+
+            }
+        }
     }
 
 
     .right-top {
         @extend %border-top-bottom;
+
+        ul {
+            display: grid;
+            place-content: start;
+
+            li {
+                list-style: none;
+                @extend %font-sec;
+                padding: .5rem
+            }
+        }
     }
-}

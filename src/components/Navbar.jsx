@@ -7,8 +7,8 @@ const Navbar = () => {
     <nav className='navbar'>
         <ul className='navbar__list'>
             <li>Portfolio</li>
-            <li>Blogs</li>
             <li>Projects</li>
+            <li>Blogs</li>
         </ul>
     </nav>
   )
