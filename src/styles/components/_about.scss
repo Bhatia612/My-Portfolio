@@ -8,16 +8,14 @@
 
     h1 {
         width: 65vw;
-        font-size: 1.5rem;
         @extend %font-pri;
         @extend %border-left-right;
-        padding: 1rem 0.5rem .2rem;
-        letter-spacing: 2px;
+        padding: 1rem 0.8rem .3rem;
 
     }
 
     &__list {
-        padding: 0;
+        padding: 1rem;
         list-style: none;
         width: 100vw;
         @extend %border-top-bottom;
@@ -27,11 +25,10 @@
 
         li {
             position: relative;
-            padding: .5rem 1rem;
+            padding: .5rem 2rem;
             padding-bottom: .5rem;
             width: 65vw;
             @extend %font-sec;
-            letter-spacing: 2px;
 
 
 

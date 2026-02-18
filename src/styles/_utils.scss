@@ -1,6 +1,6 @@
-$border-color: #2d2d2ded;
-$separator-color: #48484880;
-$bg-color: #07080d;
+$border-color: #2d2d2d78;
+$bg-color: #07080c;
+$bg-hover: #13151e;
 
 // Borders...
 %border-top-bottom {
@@ -15,13 +15,47 @@ $bg-color: #07080d;
 
 // Fonts...
 
-@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Story+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300..700&family=Stint+Ultra+Expanded&display=swap');
 
 %font-pri {
-  font-family: "Delius Unicase", cursive;
+  font-family: "Stint Ultra Expanded", serif;
+  font-size: 1.5rem;
+
+  letter-spacing: 3px;
+  font-weight: 900;
 }
 
 %font-sec {
-  font-family: "Story Script", sans-serif;
+  font-family: "Pontano Sans", sans-serif;
+  letter-spacing: 2px;
+  font-size: .95rem !important;
+}
+
+
+.empty {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 2rem;
+  overflow: hidden;
+  z-index: 1;
+  @extend %border-top-bottom;
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: repeating-linear-gradient(315deg,
+        $border-color 0,
+        $border-color 1px,
+        transparent 1.5px,
+        transparent 7px);
+    z-index: 0;
+    transform: translateX(0);
+  }
 }

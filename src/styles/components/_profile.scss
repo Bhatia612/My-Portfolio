@@ -16,12 +16,12 @@
             display: grid;
             place-items: center;
             aspect-ratio: 1;
-            padding: .1rem;
+            padding: .2rem;
             @extend %border-top-bottom;
             @extend %border-left-right;
             border-radius: 50%;
             background: $bg-color;
-            scale: 1.09;
+            scale: 1.1;
             position: relative;
             z-index: 7;
 
@@ -55,26 +55,20 @@
         p {
             padding: .3rem 1rem;
             @extend %font-sec;
-            letter-spacing: 4px;
-            opacity: .5;
-            font-size: .7rem
+            opacity: .6;
 
 
         }
 
         .name {
             @extend %border-top-bottom;
-            font-size: 2.5rem;
+            font-size: 2.7rem !important;
             @extend %font-pri;
-            font-weight: 900;
-            letter-spacing: 4px;
             padding: 0 1rem;
         }
 
         .title {
-            font-size: 1.0rem;
             @extend %font-sec;
-            letter-spacing: 2px;
             padding: .5rem 1rem;
         }
     }

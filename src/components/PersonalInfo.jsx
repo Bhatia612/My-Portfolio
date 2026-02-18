@@ -1,4 +1,5 @@
 import React from 'react'
+import { RiMenLine, RiCodeSSlashFill, RiMapPin2Line, RiMailLine, RiPhoneLine, RiLinkedinLine, RiGithubLine, RiTwitterXLine } from "@remixicon/react";
 
 const PersonalInfo = () => {
     return (
@@ -6,31 +7,74 @@ const PersonalInfo = () => {
             <div className="left">
                 <ul>
                     <li>
-                        He/Him
+                        <div className='icon-wrapper'>
+                            <RiMenLine className="icons" />
+                        </div>
+                        <p>
+                            He/Him
+                        </p>
                     </li>
                     <li>
-                        Full-Stack Web Developer | Design Engineer
+                        <div className='icon-wrapper'>
+                            <RiCodeSSlashFill className="icons" />
+                        </div>
+                        <p>
+                            Full-Stack Web Developer | Design Engineer
+                        </p>
                     </li>
 
                     <li>
-                        Ottawa, Canada
+                        <div className='icon-wrapper'>
+                            <RiMapPin2Line className="icons" />
+                        </div>
+                        <p>
+                            Ottawa, Canada
+                        </p>
                     </li>
                     <li>
-                        mohitbhatia612@gmail.com
+                        <div className='icon-wrapper'>
+                            <RiMailLine className="icons" />
+                        </div>
+                        <p>
+                            mohitbhatia612@gmail.com
+                        </p>
                     </li>
                     <li>
-                        +1 437-879-3446
+                        <div className='icon-wrapper'>
+                            <RiPhoneLine className="icons" />
+                        </div>
+                        <p>
+                            +1 437-879-3446
+                        </p>
                     </li>
                 </ul>
             </div>
-            <div className="right-bottom">
+            <div className="link one">
+                <div className='icon-wrapper'>
+                    <RiLinkedinLine className="icons" />
+                </div>
+                <p>
+                    LinkedIn
+                </p>
+                <small>→</small>
             </div>
-            <div className="right-top">
-                <ul>
-                    <li>GitHub</li>
-                    <li>LinkedIn</li>
-                    <li>X</li>
-                </ul>
+            <div className="link two">
+                <div className='icon-wrapper'>
+                    <RiGithubLine className="icons" />
+                </div>
+                <p>
+                    Github
+                </p>
+                <small>→</small>
+            </div>
+            <div className="link three">
+                <div className='icon-wrapper'>
+                    <RiTwitterXLine className="icons" />
+                </div>
+                <p>
+                    X
+                </p>
+                <small>→</small>
             </div>
 
         </div>
