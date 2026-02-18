@@ -14,7 +14,10 @@ const Profile = () => {
             <div className="p-details">
                 <p>Turning Ideas Into Code</p>
                 <big className="name">MOHIT BHAITA</big>
-                <small className="title">Full-Stack WebDeveloper | Design Engineer</small>
+                <small className="title">
+                    <span>Full-Stack WebDeveloper</span>
+                    <span>Design Engineer</span>
+                </small>
             </div>
         </div>
     )

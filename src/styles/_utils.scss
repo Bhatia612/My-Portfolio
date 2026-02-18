@@ -1,11 +1,11 @@
-$border-color: #2d2d2d78;
+$border-color: #2d2d2da3;
 $bg-color: #07080c;
 $bg-hover: #13151e;
 
 // Borders...
 %border-top-bottom {
-  border-top: 1.5px solid $border-color;
-  border-bottom: 1.5px solid $border-color;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
 }
 
 %border-left-right {
@@ -28,7 +28,7 @@ $bg-hover: #13151e;
 %font-sec {
   font-family: "Pontano Sans", sans-serif;
   letter-spacing: 2px;
-  font-size: .95rem !important;
+  font-size: .9rem !important;
 }
 
 

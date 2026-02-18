@@ -70,7 +70,33 @@
         .title {
             @extend %font-sec;
             padding: .5rem 1rem;
+            position: relative;
+            overflow: hidden;
+            height: 2rem;
+
+            span {
+                display: block;
+                height: 100%;
+                margin-bottom: 1rem;
+                animation: role-changer 3s infinite;
+            }
         }
     }
 }
 
+
+@keyframes role-changer {
+    25% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(-200%);
+    }
+
+    75% {
+        transform: translateY(-200%);
+
+    }
+
+}
