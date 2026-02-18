@@ -2,7 +2,7 @@
 
 .personal-info {
     display: grid;
-    width: 65vw;
+    width: $content-width;
     height: 15rem;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -41,7 +41,7 @@
     @extend %border-left-right;
     cursor: pointer;
     transition: background .3s;
-    padding: .2rem 1rem;
+    padding: 1rem;
     @extend %font-sec;
     display: flex;
     justify-content: start;

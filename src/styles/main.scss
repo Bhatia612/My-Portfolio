@@ -3,6 +3,7 @@
 @use "./components/about";
 @use "./components/personal-info";
 @use "./utils" as *;
+@use "./responsive.scss";
 
 * {
     margin: 0;
@@ -12,6 +13,8 @@
 
 body {
     overflow-x: hidden;
+    background: $bg-color;
+
 }
 
 #root {
@@ -21,10 +24,11 @@ body {
     display: flex;
     justify-content: center;
     background: $bg-color;
+
 }
 
 main {
-    width: 65vw;
+    width: $content-width;
     margin: 1rem 0;
     @extend %border-left-right;
 
@@ -41,7 +45,7 @@ main {
         justify-content: center;
 
         .inner {
-            width: 65vw;
+            width: $content-width;
             background: green;
             height: 100%;
             background: $bg-color;
@@ -51,7 +55,7 @@ main {
 
     .cover-bg {
         margin-top: 2.5rem;
-        width: 65vw;
+        width: $content-width;
         height: 12rem;
 
     }
@@ -71,5 +75,17 @@ main {
         }
 
 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    $content-width: 97vw;
+
+    main, main .cover-bg, main .top .inner {
+        width: $content-width;
+    }
+
+    main .cover-bg {
+        height: 8rem;
     }
 }

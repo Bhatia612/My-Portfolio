@@ -1,0 +1,45 @@
+@use "./utils" as *;
+
+@media only screen and (max-width: 768px) {
+    $content-width: 97vw;
+
+    .navbar__list,
+    .personal-info,
+    .profile,
+    .about h1 {
+        width: $content-width;
+
+    }
+
+    .navbar__list {
+        padding-right: 1rem;
+    }
+
+    .personal-info {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+
+        .left {
+            ul {
+                gap: .5rem;
+            }
+        }
+    }
+
+    .about__list {
+        align-items: flex-start;
+
+        li {
+            width: $content-width;
+            padding: .5rem 1rem;
+
+
+        }
+    }
+
+
+
+
+
+}
