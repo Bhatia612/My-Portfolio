@@ -36,7 +36,7 @@ const PersonalInfo = () => {
                             <RiMailLine className="icons" />
                         </div>
                         <p>
-                            mohitbhatia612@gmail.com
+                            <a href="mailto:mohitbhatia612@gmail.com">mohitbhatia612@gmail.com</a>
                         </p>
                     </li>
                     <li>
@@ -44,7 +44,7 @@ const PersonalInfo = () => {
                             <RiPhoneLine className="icons" />
                         </div>
                         <p>
-                            +1 437-879-3446
+                            <a href="tel:+14378793446">+1 437-879-3446</a>
                         </p>
                     </li>
                 </ul>

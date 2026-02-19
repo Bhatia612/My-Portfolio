@@ -35,7 +35,7 @@ const BlogContainer = ({ maxBlogs }) => {
 
   return (
     <div className="blog-container-outer">
-      <h1>Blogs</h1>
+      <h1>Blogs<sup> ({blogs.length})</sup></h1>
       <div className="blog-container-inner">
         <div className="blog-container">
           {blogsToShow.map((blog, index) => (

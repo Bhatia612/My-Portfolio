@@ -13,6 +13,11 @@
     @extend %border-left-right;
     padding: 1rem 0.8rem .3rem;
     
+    sup {
+      @extend %font-sec;
+      opacity: .7;
+    }
+    
     
   }
 }
@@ -66,7 +71,7 @@
 
   .blog-card-title {
     @extend %font-pri;
-    font-size: 1.1rem !important;
+    font-size: .95rem !important;
     padding-left: .5rem
   }
 
