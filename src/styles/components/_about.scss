@@ -31,9 +31,8 @@
             padding-bottom: .5rem;
             width: $content-width;
             @extend %font-sec;
-
-
-
+            display: flex;
+            gap: .5rem;
 
         }
     }

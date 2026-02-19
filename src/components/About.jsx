@@ -5,12 +5,14 @@ const About = () => {
         <div className="about">
             <h1>About</h1>
             <ul className="about__list">
-                <li>»&nbsp; Self-made Full-Stack Web Developer and Design Engineer, grinding consistently for the 2+ years — fueled by curiosity (and a healthy amount of coffee).</li>
-                <li>»&nbsp; Skilled in React, Node.js, MongoDB, and modern front-end & back-end technologies.</li>
-                <li>»&nbsp; Passionate about building user-centric, scalable, performance-driven web applications that actually work in production — not just in demos.</li>
-                <li>»&nbsp; Strong problem-solving mindset, with attention to clean, maintainable code (yes, I refactor my own code).</li>
-                <li>»&nbsp; Constantly exploring new tools and technologies, because staying comfortable is not part of the plan.</li>
-                <li>»&nbsp; Committed to continuous improvement — shipping better code today than I did yesterday.</li>
+                <li><span>»</span> Full-Stack Web Developer with several years invested in understanding how things actually work - not just how to copy-paste them.</li>
+                <li><span>»</span> Strong foundation in React, Node.js, MongoDB, and modern front-end/back-end architecture.</li>
+                <li><span>»</span> Currently building and contributing to real-world products, turning theory into software that solves practical problems.</li>
+                <li><span>»</span> Focused on creating scalable, user-centered applications that behave properly outside of localhost.</li>
+                <li><span>»</span> Strong problem-solving mindset with respect for clean, maintainable code (future me should not suffer).</li>
+                <li><span>»</span> Curious by default - always exploring better tools, better patterns, and better ways to architect solutions.</li>
+                <li><span>»</span> Committed to continuous improvement - fewer bugs, fewer hacks, and fewer “it works on my machine” moments.</li>
+
             </ul>
         </div>
 

@@ -6,7 +6,9 @@
     .navbar__list,
     .personal-info,
     .profile,
-    .about h1 {
+    .about h1,
+    .blog-container-outer h1,
+    .blog-container {
         width: $content-width;
 
     }
