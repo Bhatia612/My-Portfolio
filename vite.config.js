@@ -7,5 +7,5 @@ export default defineConfig({
     react(),
     mdx()
   ],
-  base: '/My-Portfolio/'
+  base: '/My-Portfolio/',
 });
