@@ -1,18 +1,18 @@
-$border-color: #2d2d2d;
-$bg-color: #09090f;
-$bg-hover: #1b1b1b;
+$border-color: #292929;
+$bg-color: #0b0b0c;
+$bg-hover: #131314;
 
 $content-width: 65vw;
 
 // Borders...
 %border-top-bottom {
-  border-top: 1px solid $border-color;
-  border-bottom: 1px solid $border-color;
+  border-top: .5px solid $border-color;
+  border-bottom: .5px solid $border-color;
 }
 
 %border-left-right {
-  border-left: 1px solid $border-color;
-  border-right: 1px solid $border-color;
+  border-left: .5px solid $border-color;
+  border-right: .5px solid $border-color;
 }
 
 // Fonts...
@@ -31,6 +31,13 @@ $content-width: 65vw;
   font-family: "Pontano Sans", sans-serif;
   letter-spacing: 2px;
   font-size: .9rem !important;
+}
+
+// Separators . . .
+
+.separator {
+  width: 100vw;
+  height: 1.5rem;
 }
 
 
@@ -54,7 +61,7 @@ $content-width: 65vw;
     height: 100%;
     background: repeating-linear-gradient(315deg,
         $border-color 0,
-        $border-color 1px,
+        $border-color .5px,
         transparent 1.5px,
         transparent 7px);
     z-index: 0;

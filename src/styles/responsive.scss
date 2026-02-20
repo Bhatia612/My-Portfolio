@@ -8,7 +8,9 @@
     .profile,
     .about h1,
     .blog-container-outer h1,
-    .blog-container {
+    .blog-container,
+    .blog-p h2,
+    .footer {
         width: $content-width;
 
     }
@@ -30,7 +32,6 @@
     }
 
     .about__list {
-        align-items: flex-start;
 
         li {
             width: $content-width;
@@ -39,9 +40,6 @@
 
         }
     }
-
-
-
 
 
 }

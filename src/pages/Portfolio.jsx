@@ -3,6 +3,7 @@ import Separator from "../components/Separator"
 import About from "../components/About"
 import PersonalInfo from "../components/PersonalInfo"
 import BlogContainer from "../components/BlogContainer"
+import Footer from "../components/Footer"
 
 const Portfolio = () => {
   return (
@@ -13,8 +14,9 @@ const Portfolio = () => {
       <Separator />
       <About />
       <Separator />
-      <BlogContainer maxBlogs={4}/>
+      <BlogContainer maxBlogs={4} />
       <Separator />
+      <Footer />
     </div>
   )
 }

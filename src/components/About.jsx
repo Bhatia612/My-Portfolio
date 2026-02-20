@@ -5,7 +5,7 @@ const About = () => {
         <div className="about">
             <h1>About</h1>
             <ul className="about__list">
-                <li><span>»</span> Full-Stack Web Developer with several years invested in understanding how things actually work - not just how to copy-paste them.</li>
+                <li><span>»</span> Full-Stack Web Developer with 2+ years invested in understanding how things actually work - not just how to copy-paste them.</li>
                 <li><span>»</span> Strong foundation in React, Node.js, MongoDB, and modern front-end/back-end architecture.</li>
                 <li><span>»</span> Currently building and contributing to real-world products, turning theory into software that solves practical problems.</li>
                 <li><span>»</span> Focused on creating scalable, user-centered applications that behave properly outside of localhost.</li>

@@ -1,0 +1,51 @@
+@use "../utils" as *;
+
+.footer {
+    width: $content-width;
+    padding: 1rem 0;
+    text-align: center;
+    @extend %border-left-right;
+    color: rgba(255, 255, 255, 0.615);
+
+
+    .developer {
+        text-decoration: underline;
+        text-underline-offset: .2rem;
+
+        :hover {
+            color: rgb(255, 255, 255);
+
+        }
+    }
+
+    .footer-name {
+        font-weight: 600;
+        margin-bottom: 0.3rem;
+        @extend %font-pri;
+        font-size: .7rem !important;
+        letter-spacing: .2rem;
+        padding-bottom: .5rem;
+
+    }
+
+    .footer-tagline {
+        opacity: 0.8;
+        @extend %font-sec;
+        letter-spacing: .2rem;
+        font-size: .9rem !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        .footer-name {
+            font-size: .65rem !important;
+            letter-spacing: .1rem;
+        }
+
+        .footer-tagline {
+            font-size: .9rem !important;
+            letter-spacing: .05rem;
+        }
+    }
+}

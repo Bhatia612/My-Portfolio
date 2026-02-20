@@ -12,14 +12,37 @@
     @extend %font-pri;
     @extend %border-left-right;
     padding: 1rem 0.8rem .3rem;
-    
+
     sup {
       @extend %font-sec;
       opacity: .7;
     }
-    
-    
+
+
   }
+}
+
+.blog-p {
+  width: 100vw;
+  position: relative;
+  left: 0;
+  @extend %border-top-bottom;
+  display: flex;
+  justify-content: center;
+
+  & h2 {
+    @extend %font-sec;
+    opacity: .7;
+    text-align: start;
+    width: $content-width;
+    padding: .3rem 1rem;
+    font-weight: lighter;
+
+    @extend %border-left-right;
+
+
+  }
+
 }
 
 .blog-container-inner {
@@ -53,7 +76,7 @@
   gap: .7rem;
   cursor: pointer;
   margin: 1rem;
-    border-radius: .5rem;
+  border-radius: .5rem;
 
 
   &:hover {
@@ -66,6 +89,7 @@
     border-radius: .5rem;
     @extend %border-top-bottom;
     @extend %border-left-right;
+    background: $border-color;
 
   }
 
