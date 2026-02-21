@@ -1,0 +1,162 @@
+@use "../utils" as *;
+
+.projects {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @extend %border-top-bottom;
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+    &__accordion {
+        width: $content-width;
+        @extend %border-left-right;
+    }
+
+    &__item {
+        @extend %border-top-bottom;
+        overflow: hidden;
+        transition: 0.3s ease;
+
+
+
+        .project-t-d {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                @extend %font-pri;
+                font-size: 1rem;
+                letter-spacing: .1rem;
+            }
+        }
+
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        &>* {
+            margin: 1rem;
+        }
+
+
+        &:hover {
+            background: $bg-hover;
+        }
+    }
+
+    &__tooltip-wrapper {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+
+    }
+
+    &__tooltip {
+        @extend %font-sec;
+        position: absolute;
+        left: -5%;
+        background: $bg-color;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem !important;
+        letter-spacing: 0.05rem;
+        border-radius: 4px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s ease, transform 0.2s ease;
+
+
+        &__link {
+            font-size: 0rem;
+            opacity: 0.6;
+            transition: 0.2s ease;
+
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__tooltip-wrapper:hover &__tooltip {
+        opacity: 1;
+        transform: translateX(-110%);
+        scale: 1.2;
+
+    }
+
+    &__icon {
+        font-size: 1.2rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 1rem
+    }
+
+    &__date {
+        @extend %font-sec;
+        font-size: 0.85rem !important;
+        opacity: 0.6;
+        margin-left: .2rem;
+    }
+
+    &__content {
+        @extend %font-sec;
+        padding: 1rem;
+        border-top: 1px solid #333;
+
+        ul {
+            margin: 1rem 0;
+            padding-left: 1.2rem;
+            list-style: none;
+
+        }
+    }
+
+    &__description {
+        margin-bottom: 0.5rem;
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        opacity: .7;
+    }
+
+    &__tag {
+        padding: 0.4rem 1rem;
+        font-size: 0.75rem;
+        background: $bg-hover;
+        border: 1px solid $border-color;
+        border-radius: .5rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .projects__tooltip {
+        display: none;
+    }
+}

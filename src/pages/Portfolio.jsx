@@ -2,6 +2,7 @@ import Profile from "../components/Profile"
 import Separator from "../components/Separator"
 import About from "../components/About"
 import PersonalInfo from "../components/PersonalInfo"
+import ProjectsContainer from '../components/ProjectsContainer';
 import BlogContainer from "../components/BlogContainer"
 import Footer from "../components/Footer"
 
@@ -13,6 +14,8 @@ const Portfolio = () => {
       <PersonalInfo />
       <Separator />
       <About />
+      <Separator />
+      <ProjectsContainer />
       <Separator />
       <BlogContainer maxBlogs={4} />
       <Separator />

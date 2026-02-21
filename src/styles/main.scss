@@ -4,6 +4,7 @@
 @use "./components/personal-info";
 @use "./components/blogs";
 @use "./components/footer";
+@use "./components/projects";
 @use "./utils" as *;
 @use "./responsive.scss";
 
@@ -13,18 +14,24 @@
     box-sizing: border-box;
 }
 
-    h1 {
-        width: $content-width;
-        @extend %font-pri;
-        @extend %border-left-right;
-        padding: 1rem 0.8rem .3rem;
 
+h1 {
+    width: $content-width;
+    @extend %font-pri;
+    @extend %border-left-right;
+    padding: 1rem 0.8rem .3rem;
+
+    sup {
+        @extend %font-sec;
+        opacity: .7;
     }
+
+
+}
 
 a {
     text-decoration: none;
     color: white;
-    transition: margin-left .2s;
 
 }
 
@@ -48,8 +55,6 @@ main {
     width: $content-width;
     margin: 1rem 0;
     @extend %border-left-right;
-
-
 
     .top {
         background: $bg-color;
@@ -76,6 +81,19 @@ main {
         width: $content-width;
         height: 12rem;
 
+    }
+
+    .portfolio,
+    .blogs {
+
+        li {
+            display: flex;
+
+            &:not(:has(.icons))::before {
+                content: "»";
+                margin-right: 1rem;
+            }
+        }
     }
 
     .portfolio {

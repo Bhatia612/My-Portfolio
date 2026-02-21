@@ -49,33 +49,45 @@ const PersonalInfo = () => {
                     </li>
                 </ul>
             </div>
-            <div className="link" role='button' tabIndex={0} data-url="https://linkedin.com/in/mohit-bhatia-777461289" onClick={(e) => window.open(e.currentTarget.dataset.url, "_blank")} onKeyDown={(e) => e.key === "Enter" && window.open(e.currentTarget.dataset.url, "_blank")}>
-                <div className='icon-wrapper'>
+            <a
+                href="https://linkedin.com/in/mohit-bhatia-777461289"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+            >
+                <div className="icon-wrapper">
                     <RiLinkedinLine className="icons" />
                 </div>
-                <p>
-                    LinkedIn
-                </p>
+                <p>LinkedIn</p>
                 <small>→</small>
-            </div>
-            <div className="link" role='button' tabIndex={0} data-url="https://github.com/Bhatia612" onClick={(e) => window.open(e.currentTarget.dataset.url, "_blank")} onKeyDown={(e) => e.key === "Enter" && window.open(e.currentTarget.dataset.url, "_blank")}>
-                <div className='icon-wrapper'>
+            </a>
+
+            <a
+                href="https://github.com/Bhatia612"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+            >
+                <div className="icon-wrapper">
                     <RiGithubLine className="icons" />
                 </div>
-                <p>
-                    Github
-                </p>
+                <p>Github</p>
                 <small>→</small>
-            </div>
-            <div className="link" role='button' tabIndex={0} data-url="https://x.com/mohitbhatia612" onClick={(e) => window.open(e.currentTarget.dataset.url, "_blank")} onKeyDown={(e) => e.key === "Enter" && window.open(e.currentTarget.dataset.url, "_blank")}>
-                <div className='icon-wrapper'>
+            </a>
+
+            <a
+                href="https://x.com/mohitbhatia612"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+            >
+                <div className="icon-wrapper">
                     <RiTwitterXLine className="icons" />
                 </div>
-                <p>
-                    X
-                </p>
+                <p>X</p>
                 <small>→</small>
-            </div>
+            </a>
+
 
         </div>
     )

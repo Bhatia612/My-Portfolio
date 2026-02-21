@@ -9,7 +9,7 @@ const Navbar = () => {
         <ul className='navbar__list'>
             <li><Link to="/">Portfolio</Link></li>
             <li>Projects</li>
-            <li><Link to="/blogs">Blogs</Link></li>
+            <li><Link to="/blogs">Blog</Link></li>
         </ul>
     </nav>
   )
