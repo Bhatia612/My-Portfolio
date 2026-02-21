@@ -34,7 +34,7 @@ const BlogContainer = ({ maxBlogs }) => {
       </div>
       <div className="blog-container-inner">
         <div className="blog-container">
-          {blogsToShow.map((blog, index) => (
+          {blogsToShow.map((blog) => (
             <BlogCard
               key={blog.slug}
               title={blog.title}

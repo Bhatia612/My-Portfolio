@@ -8,7 +8,6 @@ const Navbar = () => {
     <nav className='navbar'>
         <ul className='navbar__list'>
             <li><Link to="/">Portfolio</Link></li>
-            <li>Projects</li>
             <li><Link to="/blogs">Blog</Link></li>
         </ul>
     </nav>

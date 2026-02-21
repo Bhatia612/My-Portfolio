@@ -37,7 +37,11 @@
 
         li {
             width: $content-width;
-            padding: .5rem 1rem;
+            padding: .2rem 1rem;
+
+            &:last-child {
+                padding-bottom: 1rem;
+            }
 
 
         }
